@@ -9,7 +9,7 @@
     table_name: student   
   tasks:
      - name: Delete the table
-       mysql_query:
+       community.mysql.mysql_query:
         login_user: "{{ db_user }}"
         login_password: "{{ db_pass }}"
         login_db: "{{ db_name }}"
